@@ -1,0 +1,5 @@
+The Python course takes 3 days and costs 1089.0 euros. 
+Prior knowledge required: true
+That price is OK
+Instructors for this course are : 
+Chris Rea 45

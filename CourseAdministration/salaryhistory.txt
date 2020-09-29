@@ -1,0 +1,3 @@
+Salary of Sandy at 25 is 35000.0
+Salary of Sandy at 30 is 36050.0
+Salary of Sandy at 35 is 37131.5

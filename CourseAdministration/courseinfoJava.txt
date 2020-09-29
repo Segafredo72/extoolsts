@@ -1,0 +1,6 @@
+The Java course takes 2 days and costs 726.0 euros. 
+Prior knowledge required: false
+That price is OK
+Instructors for this course are : 
+Sandy Schillebeeckx 35
+Chris Froome 45
