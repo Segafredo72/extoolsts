@@ -1,0 +1,2 @@
+Person [personNumber=1, firstname=Ann, lastName=Smits, Age=35, company=Company [name=ABIS, address=Address [street=Diesteweg, nr=14/B, zipCode=3000, town=Leuven, country=Belgie, countryCode=BE]]]
+Person [personNumber=2, firstname=John, lastName=Doe, Age=54, company=Company [name=null, address=Address [street=null, nr=null, zipCode=null, town=null, country=null, countryCode=null]]]
