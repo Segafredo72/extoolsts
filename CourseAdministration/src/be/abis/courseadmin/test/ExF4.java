@@ -10,49 +10,6 @@ import be.abis.courseadmin.model.*;
 
 public class ExF4{
 
-public static String getName(String firstLast){
-	String name;
-	Scanner readInput = new Scanner(System.in);
-	System.out.println("Please enter instructor's "+firstLast+" name :");
-	name = readInput.nextLine(); 
-	return name;
-}
-
-public static int getAge(String whatAge){
-	Scanner readInput = new Scanner(System.in);
-	boolean continueInput = true;
-	int age	= 0;
-	do {
-	try{
-		System.out.println("Please input instructor age "+whatAge+" :");
-		age = readInput.nextInt(); 
-		continueInput = false;	
-	}catch (InputMismatchException ex) {
-		System.out.println("Please enter a valid age :");
-		readInput.nextLine(); 
-	}
-	} while (continueInput);
-	return age;
-}
-
-public static double getSalary(){
-	Scanner readInput = new Scanner(System.in);
-	boolean continueInput = true;
-	double salary = 0;
-	do{
-	try{
-		System.out.println("Please enter starting salary:");
-		salary = readInput.nextDouble();
-		continueInput = false;	
-	}catch (InputMismatchException ex) {
-		System.out.println("Please enter a valid salary :");
-		readInput.nextLine(); 
-	}
-	}while(continueInput);
-	return salary;
-}
-
-
 public static void createFile (){
      try {
       File myObj = new File("salaryhistory.txt");
@@ -67,9 +24,6 @@ public static void createFile (){
       e.printStackTrace();
     }
   }
-
-
-
 
 public static void main(String[] args){
 
