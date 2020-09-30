@@ -29,12 +29,16 @@ public class ExA6 {
 		
 		System.out.println(person1);
 	
+		try {
 		BufferedWriter bw = Files.newBufferedWriter(Paths.get("personinfo.txt"));
 			
 		bw.write(person + "\n");
 		bw.write(person1 + "\n");
 		bw.close();
-			
+		}
+		catch(IOException e) {
+			System.out.println(e.getMessage());
+		}
 		
 		
 	}
