@@ -31,45 +31,21 @@ public static void main(String[] args){
 	createFile();
 		
 	
-	Instructor instructor = new Instructor();
-	Course co1 = new Course();
 	
-	co1.setTitle("Java"); 
-	co1.setNumberOfDays(2);
-	co1.setPricePerDay(300.0);
-	co1.setPriorKnowledgeRequired(false);
+	Course co1 = new Course("Java", 2, 300.0, false);
 	
-	instructor.setFirstName("Sandy");
-	instructor.setLastName("Schillebeeckx");
-	instructor.setCurrentAge(35);
-    instructor.setStartAge(25);
-	instructor.setSalary(35000.00);
+	Instructor instructor = new Instructor("Sandy", "Schillebeeckx", 42, 25, 35000.0);
 	
 	co1.addInstructor(instructor);
 
-	Instructor instructor2 = new Instructor();
-	instructor2.setFirstName("Chris");
-	instructor2.setLastName("Froome");
-	instructor2.setCurrentAge(45);
-    instructor2.setStartAge(27);
-	instructor2.setSalary(45000.00);
+	Instructor instructor2 = new Instructor("Chris", "Froome", 45, 27, 45000.00);
 	
 	co1.addInstructor(instructor2);
 
   
-	Course co2 = new Course();
+	Course co2 = new Course("Python", 3, 300.0, true);
 	
-	co2.setTitle("Python"); 
-	co2.setNumberOfDays(3);
-	co2.setPricePerDay(300.0);
-	co2.setPriorKnowledgeRequired(true);
-	
-	Instructor instructor3 = new Instructor();
-	instructor3.setFirstName("Chris");
-	instructor3.setLastName("Rea");
-	instructor3.setCurrentAge(45);
-    instructor3.setStartAge(27);
-	instructor3.setSalary(45000.00);
+	Instructor instructor3 = new Instructor("Chris", "Rea", 45, 27, 45000.00);
 	
 	co2.addInstructor(instructor3);
 		

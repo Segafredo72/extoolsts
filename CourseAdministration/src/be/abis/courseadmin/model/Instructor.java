@@ -14,15 +14,6 @@ public class Instructor {
 	private int currentAge;
 	private int startAge;
 	private double salary;
-	/*
-	public Instructor(String firstName, String lastName, int currentAge, int startAge, double salary){
-		this.firstName 	= firstName;
-		this.lastName 	= lastName;
-		this.currentAge = currentAge;
-		this.startAge 	= startAge;
-		this.salary 	= salary;
-    }
-	*/
 	
 	public Instructor(){
 		this.firstName 	= "";
@@ -30,7 +21,16 @@ public class Instructor {
 		this.currentAge = 0;
 		this.startAge 	= 0;
 		this.salary 	= 0;
-    }	
+    }
+	
+	public Instructor(String firstName, String lastName, int currentAge, int startAge, double salary){
+		this.firstName 	= firstName;
+		this.lastName 	= lastName;
+		this.currentAge = currentAge;
+		this.startAge 	= startAge;
+		this.salary 	= salary;
+    }
+	
 	
 	public String getFirstName(){
 		return firstName;

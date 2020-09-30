@@ -19,12 +19,11 @@ public class Course {
 		
 	}
 
-	public Course(String title, int numberOfDays, double pricePerDay, boolean priorKnowledgeRequired, List<Instructor> instructors ) {
+	public Course(String title, int numberOfDays, double pricePerDay, boolean priorKnowledgeRequired) {
 		this.title = title;
 		this.numberOfDays = numberOfDays;
 		this.pricePerDay = pricePerDay;
 		this.priorKnowledgeRequired = priorKnowledgeRequired;
-		this.instructors = instructors;
 	}
 	
 	public String getTitle() {
@@ -99,7 +98,7 @@ public class Course {
 		}
 
 		bw.write("That price is " + label + "\n");
-		bw.write("Instructors for this course are : \n"); 
+		bw.write("The "+instructors.size()+" Instructors for this course are : \n"); 
 		for (Instructor instructor : instructors) {
 			bw.write(instructor.getFirstName()+ " " + instructor.getLastName() +" " + instructor.getCurrentAge() + "\n");
 		}
